@@ -11,9 +11,9 @@ app.use(express.urlencoded({
 }));
 
 
-app.get('/Users', (req, res) => {
-    controller.getUser(users => {
-        res.send(users);
+app.post('/Users', (req, res) => {
+    controller.addUser(res.body, (callback) => {
+        res.send();
     });
 });
 
