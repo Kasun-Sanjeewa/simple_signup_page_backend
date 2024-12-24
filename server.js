@@ -10,7 +10,7 @@ app.use(cores());
 app.use(express.json());
 
 
-const uri = 'mongodb+srv://techict3865:Kasun1234@cluster0.37ymr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const uri = 'uri';
 
 const connect = async () => {
     try {
